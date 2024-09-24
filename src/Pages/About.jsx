@@ -6,6 +6,7 @@ const About = () => {
         We are dedicated to bringing the community together through local events
         and activities.
       </p>
+      
     </div>
   );
 };
