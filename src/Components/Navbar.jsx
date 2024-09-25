@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import "../Components/NavBar.css";
 import logo from "../assets/logo.png";
@@ -6,15 +6,15 @@ import logo from "../assets/logo.png";
 const Lists = [
   {
     nav: "Home",
-    to: "/",
+    to: "#",
   },
   {
     nav: "About",
-    to: "/about",
+    to: "#about",
   },
   {
     nav: "Contact",
-    to: "/contact",
+    to: "#contact",
   },
   {
     nav: "Login",
@@ -34,23 +34,27 @@ const Navbar = () => {
     setActiveMenu(menuName);
   };
   return (
-    <div className="navbar container">
-      <img src={logo} alt="" />
-      <div className="btns">
-        {Lists.map((list, index) => {
-          return (
-            <Link
-              key={index}
-              to={list.to}
-              onClick={() => handleMenuClick(list.nav)}
-              className={activeMenu === list.nav ? "active" : "btn"}
-            >
-              {list.nav}
-            </Link>
-          );
-        })}
+    <>
+      <div className="navbar container">
+        <img src={logo} alt="" />
+        <div className="btns">
+          {Lists.map((list, index) => {
+            return (
+              <a
+                key={index}
+                onClick={() => handleMenuClick(list.nav)}
+                className={activeMenu === list.nav ? "active" : "btn"}
+                href={list.to}
+              >
+                {list.nav}
+              </a>
+            );
+          })}
+        
+        </div>
       </div>
-    </div>
+      <Outlet />
+    </>
   );
 };
 
