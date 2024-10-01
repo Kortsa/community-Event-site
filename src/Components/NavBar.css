@@ -9,8 +9,9 @@
   justify-content: space-between;
   width: 90%;
   background-color: rgba(129, 123, 123, 0.9);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 15px;
+  z-index: 1111;
 }
 
 .navbar img {
@@ -62,4 +63,8 @@
 .trial {
   display: flex;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
 }
