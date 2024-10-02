@@ -1,4 +1,7 @@
 import "../About/About.css";
+import Contact from "../Contact/Contact";
+// import Contact from "../Contact/Contact";
+
 const About = () => {
   return (
     <div className="about-contents">
@@ -47,6 +50,9 @@ const About = () => {
             bring people closer.
           </p>
         </div>
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
     </div>
   );

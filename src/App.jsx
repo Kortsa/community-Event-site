@@ -3,13 +3,11 @@ import Navbar from "./Components/Navbar";
 import HomePage from "./Pages/Home/HomePage";
 import Events from "./Pages/Events";
 import About from "./Pages/About/About";
-import Contact from "./Pages/Contact";
 
 function App() {
   return (
     <>
       <div className="App">
-        
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<HomePage />} />

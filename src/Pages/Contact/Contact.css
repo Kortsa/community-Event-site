@@ -1,0 +1,16 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  
+}
+
+.contact h2 {
+  margin-top: 1rem;
+  color: rgb(106, 103, 103);
+}
+
+.contact .button {
+  margin-top: 1rem;
+}

@@ -29,7 +29,7 @@
   font-weight: 100;
 }
 
-.home .btn {
+/* .home .btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,4 +49,4 @@
 .home .btn:hover {
   background-color: #e33b40;
   color: white;
-}
+} */
