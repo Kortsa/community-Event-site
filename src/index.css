@@ -11,14 +11,6 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.filters {
-  margin: 20px;
-}
-
-.filters label,
-.filters select {
-  margin-right: 10px;
-}
 
 .button {
   display: flex;
@@ -43,8 +35,5 @@ body {
   color: white;
 }
 
-/* style for contact button */
 
-.contact .button{
-  box-shadow: 5px 5px 10px 0px rgb(209, 205, 205);
-}
+

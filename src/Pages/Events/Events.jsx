@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../Events/Events.css";
 
 const eventsData = [
   {
@@ -46,7 +47,9 @@ const Events = () => {
 
   return (
     <div className="events-page">
-      <h2>Upcoming Events</h2>
+      <h1>
+        Upcoming <span>Events</span>{" "}
+      </h1>
       <div className="filters">
         <label>Category:</label>
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
@@ -63,6 +66,14 @@ const Events = () => {
           <option value="Park">Park</option>
           <option value="Downtown">Downtown</option>
           <option value="Community Center">Community Center</option>
+          {/* Add more locations as needed */}
+        </select>
+        <label>Month:</label>
+        <select value={location} onChange={(e) => setLocation(e.target.value)}>
+          <option value="All">January</option>
+          <option value="feb">February</option>
+          <option value="mar">March</option>
+          <option value="">April</option>
           {/* Add more locations as needed */}
         </select>
       </div>
