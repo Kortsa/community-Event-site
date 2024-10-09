@@ -27,12 +27,26 @@ body {
   margin: 6rem 3rem;
   width: 220px;
   border-radius: 10px;
- 
 }
 
 .button:hover {
   background-color: #e33b40;
   color: white;
+}
+
+/* media Queries */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+  .button{
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 8rem;
+    margin: 3rem 2rem;
+  }
 }
 
 

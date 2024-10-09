@@ -16,4 +16,33 @@
   box-shadow: 5px 5px 10px 0px rgb(209, 205, 205);
 }
 
+/* media Queries */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+  .contact{
+    margin-top: 2rem;
+  }
+
+  .contact h2{
+    text-align: center;
+  }
+
+  .button{
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 8rem;
+    margin: 3rem 2rem;
+  }
+
+  .contact .button{
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 9rem;
+  }
+}
+
 

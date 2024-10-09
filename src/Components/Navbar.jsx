@@ -55,7 +55,7 @@ const Navbar = () => {
       </div>
       <Outlet />
     </>
-  );
+  ); 
 };
 
 export default Navbar;

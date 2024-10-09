@@ -29,24 +29,27 @@
   font-weight: 100;
 }
 
-/* .home .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  background-color: white;
-  border: none;
-  color: black;
-  text-transform: capitalize;
-  font-weight: bolder;
-  font-size: 1.5rem;
-  padding: 20px;
-  margin: 6rem 3rem;
-  width: 220px;
-  border-radius: 10px;
+/* media Queries */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+  .home{
+   margin-top: 5rem;
+  }
+
+  .home h2{
+    width: 85%;
+    font-size: 2rem;
+  }
+
+  .home p{
+    width: 85%;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
 }
 
-.home .btn:hover {
-  background-color: #e33b40;
-  color: white;
-} */

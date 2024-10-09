@@ -74,3 +74,61 @@
   line-height: 1.2;
   font-size: 2rem;
 }
+
+/* media Queries */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .about-contents {
+    padding: 1rem;
+  }
+
+  .about-contents h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-contents h1 {
+    font-size: 3rem;
+  }
+
+  .about-contents p {
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .cards .card {
+    padding: 1rem;
+    margin-top: 5rem;
+    height: 300px;
+  }
+
+  .cards .card .card-top {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 2.5rem;
+  }
+
+  .cards .card p {
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .cards {
+    display: none;
+  }
+}
