@@ -30,3 +30,80 @@
   margin-right: 10px;
   font-size: 1.5rem;
 }
+
+select {
+  width: 15rem;
+  border-radius: 15px;
+  background-color: #555252;
+  padding: 5px;
+ color: white;
+ border: none;
+
+}
+
+select:hover {
+  background-color: darkred; /* Slightly darker on hover */
+}
+
+option {
+  background-color: #ffffff;
+  width: 5rem;
+  color: black;
+
+  /* Styles for option elements are limited */
+}
+
+
+
+.event-list{
+  /* width: 100%; */
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px 1px rgb(209, 205, 205);
+  width: 20rem;
+  height: 30rem;
+  /* padding: 3rem; */
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+
+.event-card img {
+  border-radius: 15px 15px 0 0 ;
+  height: 18rem;
+}
+
+.event-card .card-content{
+  padding-left: 2rem;
+}
+
+.event-card h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 000;
+}
+
+.event-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.event-card .button {
+  
+  width: 90px;
+  padding: 0.5rem;
+  margin: 1rem 0rem;
+  font-size: 0.5rem;
+  background-color: red;
+  color: white;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+
