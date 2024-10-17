@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../Events/Events.css";
 import img1 from "../../assets/lfh.webp";
 import img2 from "../../assets/spider2.webp";
+import Contact from "../Contact/Contact";
 
 const eventsData = [
   {
@@ -11,7 +12,6 @@ const eventsData = [
     category: "Volunteer",
     location: "Park",
     image: img2,
-  
   },
   {
     id: 1,
@@ -60,16 +60,22 @@ const Events = () => {
         Upcoming <span>Events</span>
       </h1>
       <div className="filters">
-        <label>Category:</label>
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          <option value="All">All</option>
-          <option value="Volunteer">Volunteer</option>
-          <option value="Arts">Arts</option>
-          <option value="Charity">Charity</option>
-          {/* Add more categories as needed */}
-        </select>
+        <div className="cat">
+          <label>Category:</label>
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <option value="All">All</option>
+            <option value="Volunteer">Volunteer</option>
+            <option value="Arts">Arts</option>
+            <option value="Charity">Charity</option>
+            {/* Add more categories as needed */}
+          </select>
+        </div>
 
-        <label>Location:</label>
+       <div className="cat">
+       <label>Location:</label>
         <select value={location} onChange={(e) => setLocation(e.target.value)}>
           <option value="All">All</option>
           <option value="Park">Park</option>
@@ -77,8 +83,10 @@ const Events = () => {
           <option value="Community Center">Community Center</option>
           {/* Add more locations as needed */}
         </select>
+       </div>
 
-        <label>Month:</label>
+       <div className="cat">
+       <label>Month:</label>
         <select value={month} onChange={(e) => setMonth(e.target.value)}>
           <option value="All">All</option>
           <option value="1">January</option>
@@ -94,6 +102,7 @@ const Events = () => {
           <option value="11">November</option>
           <option value="12">December</option>
         </select>
+       </div>
       </div>
 
       <div className="event-list">
@@ -112,6 +121,7 @@ const Events = () => {
           </div>
         ))}
       </div>
+      <Contact />
     </div>
   );
 };

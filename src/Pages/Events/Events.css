@@ -36,14 +36,11 @@ select {
   border-radius: 15px;
   background-color: #555252;
   padding: 5px;
- color: white;
- border: none;
-
+  color: white;
+  border: none;
 }
 
-select:hover {
-  background-color: darkred; /* Slightly darker on hover */
-}
+
 
 option {
   background-color: #ffffff;
@@ -53,13 +50,16 @@ option {
   /* Styles for option elements are limited */
 }
 
+.filters .cat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-.event-list{
+.event-list {
   /* width: 100%; */
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .event-card {
@@ -75,11 +75,11 @@ option {
 }
 
 .event-card img {
-  border-radius: 15px 15px 0 0 ;
+  border-radius: 15px 15px 0 0;
   height: 18rem;
 }
 
-.event-card .card-content{
+.event-card .card-content {
   padding-left: 2rem;
 }
 
@@ -95,7 +95,6 @@ option {
 }
 
 .event-card .button {
-  
   width: 90px;
   padding: 0.5rem;
   margin: 1rem 0rem;
@@ -106,4 +105,63 @@ option {
   font-size: 10px;
 }
 
+/* media queries */
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .events-page h1 {
+    font-size: 2rem;
+  }
 
+  .filters {
+    flex-direction: column;
+    margin: 1rem auto;
+   
+  }
+
+  .filters label,
+  .filters select {
+    font-size: 0.7rem;
+  }
+
+  select {
+    margin: auto;
+    width: 80%;
+  }
+
+  option {
+    width: 10rem;
+  }
+
+  .filters .cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.8rem;
+  }
+
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event-card {
+    width: 18rem;
+  }
+
+  .event-card .card-content{
+    padding: 1rem;
+  }
+  .event-card h2{
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  .event-card p {
+    font-size: 0.8rem;
+    /* line-height: 1; */
+  }
+}

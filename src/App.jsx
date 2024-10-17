@@ -12,6 +12,7 @@ function App() {
           <Route path="/" element={<Navbar />}>
             <Route index element={<HomePage />} />
             <Route path="/events" element={<Events />} />
+            {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/events" element={<Events />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} /> */}
