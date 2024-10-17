@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import "../Components/NavBar.css";
 import logo from "../assets/logo.png";
-import hamburger from "../assets/icons8-hamburger-button-50.png"
+import hamburger from "../assets/icons8-hamburger-button-50.png";
 
 const Lists = [
   {
@@ -28,46 +28,28 @@ const Lists = [
 ];
 
 const Navbar = () => {
-  const [activeMenu, setActiveMenu] = useState("Home");
   const [isOpen, setIsOpen] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setShowMenu(!showMenu);
   };
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
-  // Function to handle click event and set the active menu
-  const handleMenuClick = (menuName) => {
-    setActiveMenu(menuName);
-  };
   return (
-    <>
-      <div className="navbar container">
+    <div className="container">
+      <div className={`navbar ${showMenu ? "show" : ""}`} onClick={toggleMenu}>
         <a href="/">
           <img src={logo} alt="Logo" />
         </a>
 
-      
-        <img
-          // src={hamburger}
-          alt="Menu"
-          className="hamburger"
-          onClick={toggleMenu}
-        />
-        <div className={`btns ${isOpen ? "show" : ""}`}>
-        
+        <div className="hamburger-menu">
+          <img src={hamburger} alt="Menu" />
+        </div>
+
+        <div className="btns list">
           {Lists.map((list, index) => {
             return (
-              <a
-                key={index}
-                // onClick={() => handleMenuClick(list.nav)}
-                className={activeMenu === list.nav ? "active" : "btn"}
-                href={list.to}
-                onClick={closeMenu} // Close menu on link click
-              >
+              <a key={index} className="btn link" href={list.to}>
                 {list.nav}
               </a>
             );
@@ -75,7 +57,7 @@ const Navbar = () => {
         </div>
       </div>
       <Outlet />
-    </>
+    </div>
   );
 };
 
