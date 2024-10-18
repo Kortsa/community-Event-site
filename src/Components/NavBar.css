@@ -64,36 +64,6 @@ a {
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
-  /* .navbar {
-    width: 90%;
-    padding: 10px;
-    display: flex;
-    margin-bottom: 10px;
-    background-color: red;
-  }
-
-  .navbar img {
-    padding: 0;
-    height: 60%;
-    width: 60%;
-  }
-
-  .navbar .btns {
-    display: none;
-  }
-
-  .navbar .btn {
-    padding: 8px;
-    display: block;
-    font-size: 12px !important;
-  }
-
-  .navbar.show .list {
-    border-radius: 10px;
-    display: block;
-    padding: 0;
-    margin: 0;
-  } */
   .navbar .list {
     display: none;
   }
@@ -101,7 +71,6 @@ a {
     display: flex;
     padding: 10px;
     margin-bottom: 10px;
-  
   }
   .navbar img {
     padding: 0;
@@ -121,8 +90,6 @@ a {
     /* display: block; */
     font-size: 12px !important;
   }
-
- 
 }
 
 /* 
@@ -130,5 +97,83 @@ a {
  ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
- 
+  .navbar .list {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .navbar img {
+    padding: 0;
+    height: 60%;
+    width: 60%;
+  }
+  .navbar.show .list {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .link {
+    padding: 8px;
+    /* display: block; */
+    font-size: 12px !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar .hamburger-menu {
+    display: none;
+  }
+
+  .navbar img {
+    padding: 0;
+    height: 40px;
+  }
+
+  .navbar .btns {
+    width: 65%;
+    padding: 0;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar .hamburger-menu {
+    display: none;
+  }
+  .navbar img {
+    padding: 0;
+    height: 50px;
+  }
+  .navbar .btns {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .navbar .hamburger-menu {
+    display: none;
+  }
+  .navbar img {
+    padding: 0;
+    height: 50px;
+  }
+  .navbar .btns {
+    width: 50%;
+    padding: 0;
+  }
 }

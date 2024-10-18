@@ -128,7 +128,170 @@
  ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+  .about-contents {
+    padding: 1rem;
+  }
+
+  .about-contents h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-contents h1 {
+    font-size: 3rem;
+  }
+
+  .about-contents p {
+    width: 100%;
+  }
+
   .cards {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card {
+    padding: 1rem;
+    margin-top: 5rem;
+    height: 300px;
+  }
+
+  .cards .card .card-top {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 2.5rem;
+  }
+
+  .cards .card p {
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-contents {
+    padding: 1rem;
+  }
+
+  .about-contents h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-contents h1 {
+    font-size: 3rem;
+  }
+
+  .about-contents p {
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card {
+    padding: 1rem;
+    margin-top: 5rem;
+    height: 300px;
+  }
+
+  .cards .card .card-top {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 2.5rem;
+    bottom: 40%;
+    right: 50%;
+  }
+
+  .cards .card p {
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .about-contents {
+    padding: 1rem;
+  }
+
+  .about-contents h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-contents h1 {
+    font-size: 3rem;
+  }
+
+  .about-contents p {
+    width: 100%;
+
+  }
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards .card {
+    height: 500px;
+  }
+
+  .cards .card .card-top {
+    bottom: 35%;
+    right: 65%;
+  }
+  .cards .card p{
+  line-height: 1;
+  font-size: 1.5rem;
+  }
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px){
+  .about-contents {
+    padding: 1rem;
+  }
+
+  .about-contents h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-contents h1 {
+    font-size: 3rem;
+  }
+
+  .about-contents p {
+    width: 100%;
+
+  }
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards .card {
+    height: 500px;
+  }
+
+  .cards .card .card-top {
+    bottom: 35%;
+    right: 65%;
+  }
+  .cards .card p{
+  line-height: 1;
+  font-size: 1.5rem;
   }
 }

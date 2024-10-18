@@ -2,11 +2,13 @@ import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../Home/HomePage.css";
 import About from "../About/About";
+import Carousel from "../../Components/Carousel/Carousel";
 
 const HomePage = () => {
   return (
     <>
       <div className="home">
+        <Carousel />
         <h2>
           Welcome to the Community <span>event website</span>
         </h2>

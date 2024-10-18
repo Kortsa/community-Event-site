@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   color: white;
-  margin-top: 15rem;
+  margin-top: 8rem;
+  
 }
 
 .home h2 {
@@ -50,6 +51,29 @@
     font-size: 1rem;
     line-height: 1.5;
     margin-top: 1rem;
+  }
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px){
+  .home{
+    margin-top: 5rem;
+  }
+
+  .home h2{
+    width: 88%;
+    font-size: 1.8rem; 
+    line-height: 1.5;
+  }
+
+  .home p{
+width: 80%;
+font-size: 1.5rem;
+line-height: 1.5;
   }
 }
 

@@ -1,0 +1,158 @@
+:-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  padding: 2rem;
+  width: 80%;
+  margin-bottom: 5rem;
+  overflow-x: hidden;
+}
+
+.containers h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.containers .swiper_container{
+  width: 100%;
+  margin-top: 5rem;
+}
+
+
+.swiper-slide {
+  width: 20rem;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 2rem;
+  /* object-fit: cover; */
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+  .containers h1 {
+    font-size: 2rem;
+   
+  }
+  .containers .swiper_container{
+    margin-top: 1.5rem;
+  }
+
+  .containers{
+    width: 100%;
+  }
+  .swiper-slide img {
+    width: 16rem;
+    height: 18rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px){
+  .containers h1 {
+    font-size: 2rem;
+   
+  }
+  .containers .swiper_container{
+    margin-top: 1.5rem;
+  }
+
+  .containers{
+    width: 100%;
+  }
+  .swiper-slide img {
+    width: 16rem;
+    height: 18rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px){
+  .containers h1 {
+    font-size: 2rem;
+   
+  }
+  .containers .swiper_container{
+    margin-top: 1.5rem;
+  }
+
+  .containers{
+    width: 100%;
+  }
+  .swiper-slide img {
+    width: 16rem;
+    height: 18rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px){
+  .containers h1 {
+    font-size: 2rem;
+   
+  }
+  .containers .swiper_container{
+    margin-top: 1.5rem;
+  }
+
+  .containers{
+    width: 100%;
+  }
+  .swiper-slide img {
+    width: 16rem;
+    height: 18rem;
+  }
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px){
+  .containers h1 {
+    font-size: 2rem;
+   
+  }
+  .containers .swiper_container{
+    margin-top: 1.5rem;
+  }
+
+  .containers{
+    width: 100%;
+  }
+  .swiper-slide img {
+    width: 16rem;
+    height: 18rem;
+  }
+}
