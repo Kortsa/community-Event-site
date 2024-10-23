@@ -1,40 +1,60 @@
 import { useState } from "react";
 import "../Events/Events.css";
 import img1 from "../../assets/lfh.webp";
-import img2 from "../../assets/spider2.webp";
+import img3 from "../../assets/IMG_5509.WEBP"
+import img4 from "../../assets/IMG_5510.WEBP"
+import img5 from "../../assets/IMG_5511.WEBP"
+import img6 from "../../assets/IMG_5512.WEBP"
+import img7 from "../../assets/IMG_5513.WEBP"
 import Contact from "../Contact/Contact";
 
 const eventsData = [
   {
     id: 1,
-    title: "Community Cleanup",
-    date: "2024-01-15",
-    category: "Volunteer",
-    location: "Park",
-    image: img2,
-  },
-  {
-    id: 1,
-    title: "Community Cleanup",
-    date: "2024-09-15",
-    category: "Volunteer",
-    location: "Bulla Lounge",
-    image: img2,
+    title: "Young and loud Festival",
+    date: "2024-11-16",
+    category: "Festivals",
+    location: "Mawuli school campus",
+    image: img3,
   },
   {
     id: 2,
-    title: "Art Festival",
-    date: "2024-09-20",
-    category: "Arts",
+    title: "DJ School Program",
+    date: "2024-09-27",
+    category: "Meetups",
     location: "Bulla Lounge",
-    image: img1,
+    image: img4,
   },
   {
     id: 3,
-    title: "Food Drive",
-    date: "2024-09-18",
-    category: "Charity",
-    location: "Community Center",
+    title: "PYHO 24",
+    date: "2024-09-25",
+    category: "Meetups",
+    location: "",
+    image: img5,
+  },
+  {
+    id: 4,
+    title: "Accra Digital Digest",
+    date: "2024-09-24",
+    category: "MeetUps",
+    location: "Online",
+    image: img7,
+  },
+  {
+    id: 5,
+    title: "Ho Edits Wikipedia",
+    date: "2024-09-26",
+    category: "Meetups",
+    location: "Node Eight, Ho",
+    image: img6,
+  },
+  {
+    id: 6,
+    title: "Last Friday Hangout",
+    date: "2024-09-26",
+    category: "Meetups",
+    location: "Boula lounge",
     image: img1,
   },
   // Add more event data as needed
@@ -67,9 +87,13 @@ const Events = () => {
             onChange={(e) => setCategory(e.target.value)}
           >
             <option value="All">All</option>
-            <option value="Volunteer">Volunteer</option>
-            <option value="Arts">Arts</option>
-            <option value="Charity">Charity</option>
+            <option value="Volunteer">Health walk</option>
+            <option value="Arts">Community labour</option>
+            <option value="Charity">Jams</option>
+            <option value="Charity">Cultural events</option>
+            <option value="Charity">Festivals</option>
+            <option value="Charity">Hangouts</option>
+            <option value="Charity">Meetups</option>
             {/* Add more categories as needed */}
           </select>
         </div>
